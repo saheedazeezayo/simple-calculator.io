@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icons link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- remix icons link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="#" class="logo" style="margin-left: 50px;">A Simple Calculator <span>Webpage.</span></a>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <form action="">
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value = '' " class="operator">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice (0,-1)" class="operator">
+                    <input type="button" value="." onclick="display.value += '.' " class="operator">
+                    <input type="button" value="/" onclick="display.value += '/' " class="operator">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7' ">
+                    <input type="button" value="8" onclick="display.value += '8' ">
+                    <input type="button" value="9" onclick="display.value += '9' ">
+                    <input type="button" value="*" onclick="display.value += '*' " class="operator">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4' ">
+                    <input type="button" value="5" onclick="display.value += '5' ">
+                    <input type="button" value="6" onclick="display.value += '6' ">
+                    <input type="button" value="-" onclick="display.value += '-' " class="operator">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1' ">
+                    <input type="button" value="2" onclick="display.value += '2' ">
+                    <input type="button" value="3" onclick="display.value += '3' ">
+                    <input type="button" value="+" onclick="display.value += '+' " class="operator">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00' ">
+                    <input type="button" value="0" onclick="display.value += '0' ">
+                    <input type="button" value="=" style="margin-bottom: 20px;" onclick="display.value = eval(display.value)" class="equal operator">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="copyright">
+            <div class="main">
+                <div class="col">
+                    <ul>
+                        <li><a href="#">About Us</a></li> 
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <ul>
+                      <li><a href="#">Services</a></li>  
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>  
+                </div>
+            </div><br>
+           
+            <div class="social">
+                <a href="https://web.facebook.com/profile.php?id=61550710289161&show_switched_tooltip=false"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="https://www.instagram.com/saheedazeezayo/"><i class="ri-instagram-line"></i></a>
+                <a href="https://twitter.com/saheedazeezayo"><i class="ri-twitter-x-line"></i></a>
+                <a href="https://github.com/saheedazeezayo"><i class="ri-github-line"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=2348186406862&text="><i class="ri-whatsapp-line"></i></a>
+            </div><br>
+            <p>Copyright <i class="ri-copyright-line"></i> 2023 Simple Calculator, All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
